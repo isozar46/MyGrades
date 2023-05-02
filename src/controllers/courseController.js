@@ -9,3 +9,13 @@ exports.createCourse = async (req, res) => {
       res.status(500).json({ error: error.message });
     }
 };
+
+exports.getAllCourses = async (req, res) => {
+    try {
+      const courses = await Models.Course.find();
+      res.status(200).json(courses);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  };
+  
