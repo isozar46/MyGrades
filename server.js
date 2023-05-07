@@ -18,6 +18,8 @@ mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MO
 });
 
 app.use('/api', require('./src/routes/courses'));
+app.use('/api', require('./src/routes/users'));
+app.use('/api', require('./src/routes/departments'));
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
