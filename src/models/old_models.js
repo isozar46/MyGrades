@@ -1,3 +1,4 @@
+/*
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -112,6 +113,7 @@ const departmentHeadSchema = new Schema({
     },
 });
 
+
 // Export the models
 const User = mongoose.model('User', userSchema);
 const Course = mongoose.model('Course', courseSchema);
@@ -129,3 +131,4 @@ module.exports = {
     Teacher, 
     DepartmentHead
 };
+*/

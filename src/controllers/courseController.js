@@ -1,7 +1,7 @@
-const Models = require('../models/models');
+const Course = require('../models/courseModel');
 
 exports.createCourse = async (req, res) => {
-    const course = new Models.Course(req.body);
+    const course = new Course(req.body);
     try {
       const newCourse = await course.save();
       res.status(201).json(newCourse);
@@ -12,7 +12,7 @@ exports.createCourse = async (req, res) => {
 
 exports.getAllCourses = async (req, res) => {
     try {
-      const courses = await Models.Course.find();
+      const courses = await Course.find();
       res.status(200).json(courses);
     } catch (error) {
       res.status(500).json({ error: error.message });

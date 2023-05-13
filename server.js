@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = express();
 app.use(express.json());
 
-mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@my-grades.fteud9t.mongodb.net/test`, {
+mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@my-grades.fteud9t.mongodb.net/test2`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -20,6 +20,8 @@ mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MO
 app.use('/api', require('./src/routes/courses'));
 app.use('/api', require('./src/routes/users'));
 app.use('/api', require('./src/routes/departments'));
+app.use('/api', require('./src/routes/students'));
+app.use('/api', require('./src/routes/specialties'));
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

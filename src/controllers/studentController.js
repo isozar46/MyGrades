@@ -1,14 +1,14 @@
-const User = require('../models/userModel');
+const Student = require('../models/studentModel');
 
-exports.createUser = async (req, res) => {
-    const user = new User(req.body);
+exports.createStudent = async (req, res) => {
+    const student = new Student(req.body);
     try {
-      const newUser = await user.save();
+      const newStudent = await student.save();
       /*if (user.role === "student") {
         const student = new Models.Student({user: user.id});
         const newStudent = await student.save();
       }*/
-      res.status(201).json(newUser);
+      res.status(201).json(newStudent);
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
