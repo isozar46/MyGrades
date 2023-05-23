@@ -23,7 +23,7 @@ const studentSchema = new Schema(
         specialty: {
             type: Schema.Types.ObjectId,
             ref: 'Specialty',
-            required: true
+            required: false
         },
     }
 );

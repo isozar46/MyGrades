@@ -18,6 +18,7 @@ const specialtySchema = new Schema(
         },
         courses: [
             {
+                _id: false,
                 course: {
                     type: Schema.Types.ObjectId,
                     ref: 'Course',
