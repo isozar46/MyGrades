@@ -1,0 +1,382 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "MyGrades",
+    "dateExported": "2023-05-23T02:57:01.069Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "13d84880-5269-4788-8a01-a4690be248b1",
+            "name": "student account",
+            "containerId": "",
+            "created": "2023-05-19T22:53:41.252Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "06c0e90a-f1fd-4835-a6bb-ab08209bc5fb",
+            "name": "teacher account",
+            "containerId": "",
+            "created": "2023-05-19T22:53:54.346Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "department_head account",
+            "containerId": "",
+            "created": "2023-05-19T22:54:40.065Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "891278aa-cb7e-476f-8e2c-75b3a24d5f07",
+            "name": "admin account",
+            "containerId": "",
+            "created": "2023-05-22T09:11:40.365Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "59c8f8b4-d39c-4732-9577-2b71bc0c220b",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "show complaints",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-05-19T22:57:11.807Z",
+            "modified": "2023-05-19T22:57:11.807Z",
+            "headers": []
+        },
+        {
+            "_id": "8f29a3f5-0a22-47a4-943d-65f8daa8b16b",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "add student",
+            "url": "http://127.0.0.1:3000/api/students/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-05-19T22:55:00.866Z",
+            "modified": "2023-05-22T21:43:28.270Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"student_stic2@gmail.com\",\n  \"password\": \"200120032012\",\n  \"first_name\": \"islem eddine\",\n  \"last_name\": \"bougroura\",\n  \"role\": \"student\",\n  \"department\": \"IFA\",\n  \"registration_number\": 20154782,\n  \"section\": 1,\n  \"group\": 1,\n  \"academic_level\": \"M1\",\n  \"specialty\": \"646b448b2e309e428f1babf3\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTc4ODEsImV4cCI6MTY4NDg0NDI4MX0.oIyy-rbWq3A2NC78jqGxrQjnocGYzFNZK-YgfdJQBDA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5354b500-b585-4648-af2c-210fb81c9c82",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "13d84880-5269-4788-8a01-a4690be248b1",
+            "name": "show grades",
+            "url": "http://127.0.0.1:3000/api/grades/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-05-19T22:58:01.191Z",
+            "modified": "2023-05-23T02:51:42.169Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiZTIwMGI4OTJjMTE0MzAzYWFhNDgiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTY4NDgxMDI2NSwiZXhwIjoxNjg0ODk2NjY1fQ.mmIfg8MR2bGlG4HX31T8J0IciLWYnzUhvIpADYEP_t4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f6cc40f3-bb61-4319-b6be-dbe0f0794d3e",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "remove student",
+            "url": "",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-19T22:55:08.817Z",
+            "modified": "2023-05-19T22:57:18.115Z",
+            "headers": []
+        },
+        {
+            "_id": "05952c6a-a725-41c9-94e9-f93cfda083b4",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "13d84880-5269-4788-8a01-a4690be248b1",
+            "name": "show complaints",
+            "url": "",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-19T22:59:24.310Z",
+            "modified": "2023-05-19T22:59:24.310Z",
+            "headers": []
+        },
+        {
+            "_id": "64bd0892-580c-4f88-bc21-a153f0e04377",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "modify student",
+            "url": "",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-19T22:55:18.674Z",
+            "modified": "2023-05-19T22:57:19.163Z",
+            "headers": []
+        },
+        {
+            "_id": "983f29f3-7aef-4fff-8be4-60d1d072d6cd",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "06c0e90a-f1fd-4835-a6bb-ab08209bc5fb",
+            "name": "show grades",
+            "url": "",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-19T22:59:48.099Z",
+            "modified": "2023-05-19T22:59:48.099Z",
+            "headers": []
+        },
+        {
+            "_id": "c87bb835-3e0f-4a51-a934-756d4581a0bf",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "show students",
+            "url": "",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-05-19T22:55:43.752Z",
+            "modified": "2023-05-19T22:57:20.083Z",
+            "headers": []
+        },
+        {
+            "_id": "68e0a5e8-58b3-4d5f-ad6e-2234c370275c",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "06c0e90a-f1fd-4835-a6bb-ab08209bc5fb",
+            "name": "show compalints",
+            "url": "",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-05-19T22:59:55.227Z",
+            "modified": "2023-05-19T22:59:55.227Z",
+            "headers": []
+        },
+        {
+            "_id": "d629d8d7-d636-46b5-8175-418cd8b14400",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:3000/api/login/",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-05-21T02:20:55.421Z",
+            "modified": "2023-05-23T02:51:05.644Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"student_stic2@gmail.com\",\n  \"password\": \"200120032012\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e6e500a3-c934-4b19-a573-f29101e906ae",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "2038939d-2c25-4e5f-8fbc-364d6ac280c2",
+            "name": "show courses",
+            "url": "http://127.0.0.1:3000/api/courses/?specialtyCode=STIC",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-05-22T09:13:14.169Z",
+            "modified": "2023-05-22T17:20:42.090Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "specialtyCode",
+                    "value": "STIC",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTc4ODEsImV4cCI6MTY4NDg0NDI4MX0.oIyy-rbWq3A2NC78jqGxrQjnocGYzFNZK-YgfdJQBDA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "33ac2185-6f6e-47d4-901c-41e08fce298f",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "891278aa-cb7e-476f-8e2c-75b3a24d5f07",
+            "name": "add courses",
+            "url": "http://127.0.0.1:3000/api/courses/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-05-22T09:34:22.327Z",
+            "modified": "2023-05-22T19:01:11.158Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Concurrence dans les SE\",\n  \"code\": \"CSE\",\n  \"coefficient\": 4,\n  \"credit\": 3,\n  \"unit\": \"MFM00S3\" \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTc4ODEsImV4cCI6MTY4NDg0NDI4MX0.oIyy-rbWq3A2NC78jqGxrQjnocGYzFNZK-YgfdJQBDA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b55d988d-85dc-43e7-a8bf-54e70bf130d6",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "891278aa-cb7e-476f-8e2c-75b3a24d5f07",
+            "name": "add specialties",
+            "url": "http://127.0.0.1:3000/api/specialties/",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-05-22T10:20:04.748Z",
+            "modified": "2023-05-22T10:30:31.357Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Sciences et technologies de l'information et de la communication\",\n  \"code\": \"STIC\",\n  \"department\": \"IFA\",\n  \"courses\": [\n    {\n      \"course\": \"646b40cf068a792e6db5ef5c\"\n    },\n    {\n      \"course\": \"646b411d068a792e6db5ef5e\"\n    },\n    {\n      \"course\": \"646b4134068a792e6db5ef60\"\n    },\n    {\n      \"course\": \"646b4146068a792e6db5ef62\"\n    },\n    {\n      \"course\": \"646b4157068a792e6db5ef64\"\n    },\n    {\n      \"course\": \"646b416c068a792e6db5ef66\"\n    },\n    {\n      \"course\": \"646b418b068a792e6db5ef68\"\n    },\n    {\n      \"course\": \"646b4194068a792e6db5ef6a\"\n    }\n    ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTAzNjAsImV4cCI6MTY4NDc1Mzk2MH0.GC61Mo9lEx0OhGHwEfpL3iWzL6JTtkXt6A_RBp_PS1E"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b092781-0c58-4a26-a813-adefecad7eeb",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "891278aa-cb7e-476f-8e2c-75b3a24d5f07",
+            "name": "show courses",
+            "url": "http://127.0.0.1:3000/api/courses/?specialtyCode=STIC",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-05-22T10:25:12.316Z",
+            "modified": "2023-05-22T18:45:16.568Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "specialtyCode",
+                    "value": "STIC",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTc4ODEsImV4cCI6MTY4NDg0NDI4MX0.oIyy-rbWq3A2NC78jqGxrQjnocGYzFNZK-YgfdJQBDA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c3ec8c1e-0fda-44e6-b0bf-23bac78ff714",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "13d84880-5269-4788-8a01-a4690be248b1",
+            "name": "show students",
+            "url": "http://127.0.0.1:3000/api/students/",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-05-22T17:49:48.230Z",
+            "modified": "2023-05-22T17:50:53.173Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiNTUwMGVjM2Y2MWFjMzEzZjk3Y2YiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTY4NDc3NTk2MywiZXhwIjoxNjg0ODYyMzYzfQ.y8MdcRflocqZRB13ZIpf-irENRwKZxyvD52yqTV5kWI"
+            },
+            "tests": []
+        },
+        {
+            "_id": "23bdd79a-9af7-42e2-a338-643b50c665a3",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "891278aa-cb7e-476f-8e2c-75b3a24d5f07",
+            "name": "add teacher",
+            "url": "http://127.0.0.1:3000/api/teachers/",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-05-22T18:26:28.188Z",
+            "modified": "2023-05-22T21:11:56.027Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"teacher@gmail.com\",\n  \"password\": \"200120032012\",\n  \"first_name\": \"ahmed\",\n  \"last_name\": \"mohcen\",\n  \"role\": \"teacher\",\n  \"department\": \"IFA\",\n  \"courses\": [\n    {\n      \"course\": \"646b4134068a792e6db5ef60\",\n      \"course_types\": [\"TD\", \"LECTURE\"]\n    }\n    ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTc4ODEsImV4cCI6MTY4NDg0NDI4MX0.oIyy-rbWq3A2NC78jqGxrQjnocGYzFNZK-YgfdJQBDA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cb2963f8-c980-49df-9087-5ee5e54a1af8",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "06c0e90a-f1fd-4835-a6bb-ab08209bc5fb",
+            "name": "show students",
+            "url": "http://127.0.0.1:3000/api/students/?studentId=646be200b892c114303aaa48",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-05-22T20:28:36.544Z",
+            "modified": "2023-05-22T21:52:50.474Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "studentId",
+                    "value": "646be200b892c114303aaa48",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiZGFhMDRjNDM2ODkwOTdiYzE3MmIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTY4NDc4OTkyOCwiZXhwIjoxNjg0ODc2MzI4fQ.frdX1LoK5jZrsDnsAK5O6dk0GTvZ83nJc3jOWTW9gd8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "04196ef7-8b22-4040-b943-d52ef05afa11",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "891278aa-cb7e-476f-8e2c-75b3a24d5f07",
+            "name": "show students",
+            "url": "http://127.0.0.1:3000/api/students/",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-05-23T01:50:11.805Z",
+            "modified": "2023-05-23T01:51:26.528Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiM2ZkNGNkYzc2NzU0NjNkYmVhM2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ3NTc4ODEsImV4cCI6MTY4NDg0NDI4MX0.oIyy-rbWq3A2NC78jqGxrQjnocGYzFNZK-YgfdJQBDA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "95f5050c-a12a-4523-938b-2680402742c2",
+            "colId": "71fb3147-8310-4d2a-b77a-7de37ab51997",
+            "containerId": "06c0e90a-f1fd-4835-a6bb-ab08209bc5fb",
+            "name": "add grades",
+            "url": "http://127.0.0.1:3000/api/grades/",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-05-23T02:09:39.434Z",
+            "modified": "2023-05-23T02:47:51.416Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"studentId\": \"646be200b892c114303aaa48\",\n  \"courseId\": \"646b4134068a792e6db5ef60\",\n  \"gradeType\": \"CONTROL\",\n  \"value\": 15\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZiZGFhMDRjNDM2ODkwOTdiYzE3MmIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTY4NDgwODc1MywiZXhwIjoxNjg0ODk1MTUzfQ.FMPE0h8u2usLKadnvzomYyufKInD4tZh4W3bFySMDek"
+            },
+            "tests": []
+        }
+    ]
+}
